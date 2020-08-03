@@ -102,203 +102,6 @@ Wire Wire Line
 Wire Wire Line
 	10300 1900 10300 1950
 Connection ~ 10000 1900
-$Comp
-L Connector:Micro_SD_Card J301
-U 1 1 5F25D167
-P 2300 6450
-F 0 "J301" H 2250 7167 50  0000 C CNN
-F 1 "Micro_SD_Card" H 2250 7076 50  0000 C CNN
-F 2 "" H 3450 6750 50  0001 C CNN
-F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 2300 6450 50  0001 C CNN
-F 4 "Yes" H 2300 6450 50  0001 C CNN "Mounted"
-	1    2300 6450
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0319
-U 1 1 5F265FCE
-P 1450 7100
-F 0 "#PWR0319" H 1450 6850 50  0001 C CNN
-F 1 "GND" H 1455 6927 50  0000 C CNN
-F 2 "" H 1450 7100 50  0001 C CNN
-F 3 "" H 1450 7100 50  0001 C CNN
-	1    1450 7100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 7050 1450 7050
-Wire Wire Line
-	1450 7050 1450 7100
-$Comp
-L power:GND #PWR0318
-U 1 1 5F266FCD
-P 3400 7000
-F 0 "#PWR0318" H 3400 6750 50  0001 C CNN
-F 1 "GND" H 3405 6827 50  0000 C CNN
-F 2 "" H 3400 7000 50  0001 C CNN
-F 3 "" H 3400 7000 50  0001 C CNN
-	1    3400 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0315
-U 1 1 5F26B672
-P 3400 5350
-F 0 "#PWR0315" H 3400 5200 50  0001 C CNN
-F 1 "+3.3V" H 3415 5523 50  0000 C CNN
-F 2 "" H 3400 5350 50  0001 C CNN
-F 3 "" H 3400 5350 50  0001 C CNN
-	1    3400 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C305
-U 1 1 5F26B678
-P 2900 5550
-F 0 "C305" H 2992 5596 50  0000 L CNN
-F 1 "100n" H 2992 5505 50  0000 L CNN
-F 2 "" H 2900 5550 50  0001 C CNN
-F 3 "~" H 2900 5550 50  0001 C CNN
-F 4 "Yes" H 2900 5550 50  0001 C CNN "Mounted"
-	1    2900 5550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C306
-U 1 1 5F26B67E
-P 3300 5550
-F 0 "C306" H 3392 5596 50  0000 L CNN
-F 1 "10u" H 3392 5505 50  0000 L CNN
-F 2 "" H 3300 5550 50  0001 C CNN
-F 3 "~" H 3300 5550 50  0001 C CNN
-F 4 "Yes" H 3300 5550 50  0001 C CNN "Mounted"
-	1    3300 5550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0317
-U 1 1 5F26B684
-P 3300 5650
-F 0 "#PWR0317" H 3300 5400 50  0001 C CNN
-F 1 "GND" H 3305 5477 50  0000 C CNN
-F 2 "" H 3300 5650 50  0001 C CNN
-F 3 "" H 3300 5650 50  0001 C CNN
-	1    3300 5650
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0316
-U 1 1 5F26B68A
-P 2900 5650
-F 0 "#PWR0316" H 2900 5400 50  0001 C CNN
-F 1 "GND" H 2905 5477 50  0000 C CNN
-F 2 "" H 2900 5650 50  0001 C CNN
-F 3 "" H 2900 5650 50  0001 C CNN
-	1    2900 5650
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3400 5400 3300 5400
-Wire Wire Line
-	3300 5400 3300 5450
-Connection ~ 3400 5400
-Wire Wire Line
-	3400 5400 3400 5350
-Wire Wire Line
-	3300 5400 2900 5400
-Wire Wire Line
-	2900 5400 2900 5450
-Connection ~ 3300 5400
-Wire Wire Line
-	3200 6450 3400 6450
-Wire Wire Line
-	3400 5400 3400 6450
-Wire Wire Line
-	3200 6650 3400 6650
-Wire Wire Line
-	3400 6650 3400 7000
-Wire Wire Line
-	3200 6550 4600 6550
-Wire Wire Line
-	3200 6850 4100 6850
-Text Label 5600 6350 2    50   ~ 0
-SD_CMD
-Text Label 5600 6550 2    50   ~ 0
-SD_CLK
-Text Label 5600 6750 2    50   ~ 0
-SD_DAT0
-Wire Wire Line
-	8050 3350 7600 3350
-Text Label 7600 3350 0    50   ~ 0
-SD_CLK
-Wire Wire Line
-	8050 3450 7600 3450
-Text Label 7600 3450 0    50   ~ 0
-SD_CMD
-Wire Wire Line
-	8050 2850 7600 2850
-Text Label 7600 2850 0    50   ~ 0
-SD_DAT0
-Wire Wire Line
-	3200 6150 3700 6150
-Wire Wire Line
-	3200 6250 3800 6250
-Wire Wire Line
-	3200 6350 3900 6350
-Wire Wire Line
-	3200 6750 4000 6750
-$Comp
-L Device:R_Pack05 RN301
-U 1 1 5F28E21D
-P 3900 5750
-F 0 "RN301" H 4188 5796 50  0000 L CNN
-F 1 "47k" H 4188 5705 50  0000 L CNN
-F 2 "" V 4275 5750 50  0001 C CNN
-F 3 "~" H 3900 5750 50  0001 C CNN
-F 4 "Yes" H 3900 5750 50  0001 C CNN "Mounted"
-	1    3900 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 5950 3700 6150
-Wire Wire Line
-	3800 5950 3800 6250
-Wire Wire Line
-	3900 5950 3900 6350
-Connection ~ 3900 6350
-Wire Wire Line
-	3900 6350 4600 6350
-Wire Wire Line
-	4000 5950 4000 6750
-Connection ~ 4000 6750
-Wire Wire Line
-	4000 6750 4600 6750
-Wire Wire Line
-	4100 5950 4100 6850
-Wire Wire Line
-	3400 5400 3700 5400
-Wire Wire Line
-	3700 5400 3700 5550
-Wire Wire Line
-	3700 5400 3800 5400
-Wire Wire Line
-	3800 5400 3800 5550
-Connection ~ 3700 5400
-Wire Wire Line
-	3800 5400 3900 5400
-Wire Wire Line
-	3900 5400 3900 5550
-Connection ~ 3800 5400
-Wire Wire Line
-	3900 5400 4000 5400
-Wire Wire Line
-	4000 5400 4000 5550
-Connection ~ 3900 5400
-Wire Wire Line
-	4000 5400 4100 5400
-Wire Wire Line
-	4100 5400 4100 5550
-Connection ~ 4000 5400
 NoConn ~ 8050 3650
 NoConn ~ 8050 3750
 NoConn ~ 8050 3850
@@ -315,8 +118,6 @@ Text Label 10250 2800 2    50   ~ 0
 RXD0
 Wire Wire Line
 	8050 2150 7850 2150
-Text Label 7600 2150 0    50   ~ 0
-EN
 Wire Wire Line
 	8050 2950 6700 2950
 Wire Wire Line
@@ -530,8 +331,6 @@ F 4 "Yes" H 4400 3450 50  0001 C CNN "Mounted"
 	1    4400 3450
 	1    0    0    1   
 $EndComp
-Text Label 4950 2450 2    50   ~ 0
-EN
 Text HLabel 7600 2350 0    50   Input ~ 0
 IO36
 Text HLabel 7600 2500 0    50   Input ~ 0
@@ -544,48 +343,6 @@ Text Label 3600 2850 0    50   ~ 0
 RTS
 Text Label 3600 2750 0    50   ~ 0
 DTR
-$Comp
-L Device:R_Small R311
-U 1 1 5F96ED93
-P 4700 6350
-F 0 "R311" V 4504 6350 50  0000 C CNN
-F 1 "10R" V 4595 6350 50  0000 C CNN
-F 2 "" H 4700 6350 50  0001 C CNN
-F 3 "~" H 4700 6350 50  0001 C CNN
-F 4 "Yes" H 4700 6350 50  0001 C CNN "Mounted"
-	1    4700 6350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4800 6350 5600 6350
-$Comp
-L Device:R_Small R312
-U 1 1 5F96FD46
-P 4700 6550
-F 0 "R312" V 4600 6550 50  0000 C CNN
-F 1 "10R" V 4800 6550 50  0000 C CNN
-F 2 "" H 4700 6550 50  0001 C CNN
-F 3 "~" H 4700 6550 50  0001 C CNN
-F 4 "Yes" H 4700 6550 50  0001 C CNN "Mounted"
-	1    4700 6550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4800 6550 5600 6550
-$Comp
-L Device:R_Small R313
-U 1 1 5F9700D6
-P 4700 6750
-F 0 "R313" V 4800 6750 50  0000 C CNN
-F 1 "10R" V 4895 6750 50  0000 C CNN
-F 2 "" H 4700 6750 50  0001 C CNN
-F 3 "~" H 4700 6750 50  0001 C CNN
-F 4 "Yes" H 4700 6750 50  0001 C CNN "Mounted"
-	1    4700 6750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4800 6750 5600 6750
 $Comp
 L Interface_USB:CH340C U301
 U 1 1 5F97ED39
@@ -754,9 +511,6 @@ F 3 "" H 7850 1900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7850 2100 7850 2150
-Connection ~ 7850 2150
-Wire Wire Line
-	7850 2150 7600 2150
 Wire Wire Line
 	8050 2750 7600 2750
 Text Label 7600 2750 0    50   ~ 0
@@ -927,4 +681,25 @@ Wire Wire Line
 	2000 1800 2100 1800
 Text Label 4950 4000 2    50   ~ 0
 IO00
+Text HLabel 7500 2150 0    50   Input ~ 0
+~RESET
+Text Label 7550 2150 0    50   ~ 0
+~RESET
+Wire Wire Line
+	7500 2150 7850 2150
+Connection ~ 7850 2150
+Text Label 4950 2450 2    50   ~ 0
+~RESET
+Wire Wire Line
+	7600 2850 8050 2850
+Wire Wire Line
+	8050 3350 7600 3350
+Wire Wire Line
+	8050 3450 7600 3450
+Text HLabel 7600 2850 0    50   BiDi ~ 0
+IO02
+Text HLabel 7600 3350 0    50   BiDi ~ 0
+IO14
+Text HLabel 7600 3450 0    50   BiDi ~ 0
+IO15
 $EndSCHEMATC
