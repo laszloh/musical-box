@@ -565,17 +565,7 @@ F 3 "" H 1000 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 2300 2100 2300
-Wire Wire Line
-	2100 2300 2100 2350
-Wire Wire Line
-	2100 2350 2750 2350
-Wire Wire Line
-	1900 2500 2100 2500
-Wire Wire Line
-	2100 2500 2100 2450
-Wire Wire Line
-	2100 2450 2750 2450
+	1900 2300 2250 2300
 $Comp
 L Device:R_Small R301
 U 1 1 5FA52ACE
@@ -702,4 +692,14 @@ Text HLabel 7600 3350 0    50   BiDi ~ 0
 IO14
 Text HLabel 7600 3450 0    50   BiDi ~ 0
 IO15
+Wire Wire Line
+	2350 2500 2350 2350
+Wire Wire Line
+	2350 2350 2750 2350
+Wire Wire Line
+	1900 2500 2350 2500
+Wire Wire Line
+	2750 2450 2250 2450
+Wire Wire Line
+	2250 2450 2250 2300
 $EndSCHEMATC
