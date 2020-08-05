@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Power_Supervisor:LM809 U?
+L Power_Supervisor:LM809 U201
 U 1 1 5FBA9CC8
 P 4700 5750
-F 0 "U?" H 4470 5796 50  0000 R CNN
+F 0 "U201" H 4470 5796 50  0000 R CNN
 F 1 "TLV803EC30DBZR" H 4470 5705 50  0000 R CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5000 5850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm809.pdf" H 5000 5850 50  0001 C CNN
@@ -51,10 +51,10 @@ Wire Wire Line
 Text HLabel 5550 5750 2    50   Output ~ 0
 ~RESET
 $Comp
-L Device:R_Small R?
+L Device:R_Small R201
 U 1 1 5FBAB92F
 P 5200 5550
-F 0 "R?" H 5259 5596 50  0000 L CNN
+F 0 "R201" H 5259 5596 50  0000 L CNN
 F 1 "10k" H 5259 5505 50  0000 L CNN
 F 2 "" H 5200 5550 50  0001 C CNN
 F 3 "~" H 5200 5550 50  0001 C CNN
