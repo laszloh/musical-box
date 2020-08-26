@@ -1,0 +1,4 @@
+*.o
+*.a
+test/test
+examples/minimal_client/minimal_client
