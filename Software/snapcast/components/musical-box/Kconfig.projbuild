@@ -1,0 +1,14 @@
+menu "Musical-Box Audio Board"
+
+choice CUSTOMER_AUDIO_BOARD
+    prompt "Custom audio board"
+    default MUSICALBOX_BOARD_V1_0
+    help
+        Select an audio board to use with the ESP-ADF
+
+config MUSICALBOX_BOARD_V1_0
+    bool "Musical Box v1.0"
+
+endchoice
+
+endmenu
