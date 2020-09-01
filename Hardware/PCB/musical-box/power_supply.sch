@@ -946,7 +946,7 @@ U 1 1 5F93C88A
 P 1450 1500
 F 0 "J1" H 1530 1492 50  0000 L CNN
 F 1 "PSU" H 1530 1401 50  0000 L CNN
-F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00001_1x02_P5.00mm_Horizontal" H 1450 1500 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1450 1500 50  0001 C CNN
 F 3 "~" H 1450 1500 50  0001 C CNN
 	1    1450 1500
 	-1   0    0    -1  
