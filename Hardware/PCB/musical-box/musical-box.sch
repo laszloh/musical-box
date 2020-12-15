@@ -324,4 +324,92 @@ Wire Wire Line
 Connection ~ 6350 2800
 Wire Wire Line
 	6350 2800 10150 2800
+$Comp
+L Mechanical:MountingHole H101
+U 1 1 5FCE1B89
+P 1400 9700
+F 0 "H101" H 1500 9746 50  0000 L CNN
+F 1 "MountingHole" H 1500 9655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1400 9700 50  0001 C CNN
+F 3 "~" H 1400 9700 50  0001 C CNN
+	1    1400 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H102
+U 1 1 5FCE2BF0
+P 1400 9900
+F 0 "H102" H 1500 9946 50  0000 L CNN
+F 1 "MountingHole" H 1500 9855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1400 9900 50  0001 C CNN
+F 3 "~" H 1400 9900 50  0001 C CNN
+	1    1400 9900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H103
+U 1 1 5FCE30B6
+P 1400 10100
+F 0 "H103" H 1500 10146 50  0000 L CNN
+F 1 "MountingHole" H 1500 10055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1400 10100 50  0001 C CNN
+F 3 "~" H 1400 10100 50  0001 C CNN
+	1    1400 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H104
+U 1 1 5FCE332D
+P 1400 10300
+F 0 "H104" H 1500 10346 50  0000 L CNN
+F 1 "MountingHole" H 1500 10255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1400 10300 50  0001 C CNN
+F 3 "~" H 1400 10300 50  0001 C CNN
+	1    1400 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID101
+U 1 1 5FCE379D
+P 2350 9700
+F 0 "FID101" H 2435 9746 50  0000 L CNN
+F 1 "Fiducial" H 2435 9655 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 2435 9609 50  0001 L CNN
+F 3 "~" H 2350 9700 50  0001 C CNN
+	1    2350 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID102
+U 1 1 5FCE4AA3
+P 2350 9900
+F 0 "FID102" H 2435 9946 50  0000 L CNN
+F 1 "Fiducial" H 2435 9855 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 2350 9900 50  0001 C CNN
+F 3 "~" H 2350 9900 50  0001 C CNN
+	1    2350 9900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID103
+U 1 1 5FCE4F19
+P 2350 10100
+F 0 "FID103" H 2435 10146 50  0000 L CNN
+F 1 "Fiducial" H 2435 10055 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 2350 10100 50  0001 C CNN
+F 3 "~" H 2350 10100 50  0001 C CNN
+	1    2350 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID104
+U 1 1 5FCE5F3A
+P 2350 10300
+F 0 "FID104" H 2435 10346 50  0000 L CNN
+F 1 "Fiducial" H 2435 10255 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 2350 10300 50  0001 C CNN
+F 3 "~" H 2350 10300 50  0001 C CNN
+	1    2350 10300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
