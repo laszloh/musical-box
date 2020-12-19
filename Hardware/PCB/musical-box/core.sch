@@ -216,9 +216,9 @@ IO32
 Text HLabel 10250 3950 2    50   BiDi ~ 0
 IO33
 Text HLabel 10250 4050 2    50   Input ~ 0
-IO34
+I34
 Text HLabel 10250 4150 2    50   Input ~ 0
-IO35
+I35
 Wire Wire Line
 	10250 3050 9800 3050
 Wire Wire Line
@@ -348,9 +348,9 @@ F 6 "RS-Components" H 4400 3450 50  0001 C CNN "Supplier"
 	1    0    0    1   
 $EndComp
 Text HLabel 7600 2350 0    50   Input ~ 0
-IO36
+I36
 Text HLabel 7600 2500 0    50   Input ~ 0
-IO39
+I39
 Wire Wire Line
 	8050 2350 7600 2350
 Wire Wire Line
