@@ -859,15 +859,15 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J201
 U 1 1 5F93C88A
-P 1150 1500
-F 0 "J201" H 1230 1492 50  0000 L CNN
-F 1 "PSU" H 1230 1401 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1150 1500 50  0001 C CNN
-F 3 "~" H 1150 1500 50  0001 C CNN
-F 4 "146-8260" H 1150 1500 50  0001 C CNN "Partnumber"
-F 5 "RS-Components" H 1150 1500 50  0001 C CNN "Supplier"
-	1    1150 1500
-	-1   0    0    -1  
+P 1150 1600
+F 0 "J201" H 1229 1500 50  0000 L CNN
+F 1 "PSU" H 1229 1591 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1150 1600 50  0001 C CNN
+F 3 "~" H 1150 1600 50  0001 C CNN
+F 4 "146-8260" H 1150 1600 50  0001 C CNN "Partnumber"
+F 5 "RS-Components" H 1150 1600 50  0001 C CNN "Supplier"
+	1    1150 1600
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -1716,16 +1716,16 @@ Connection ~ 1450 1500
 Wire Wire Line
 	1450 1500 1700 1500
 $Comp
-L Connector:USB_C_Plug_USB2.0 P201
+L Connector:USB_C_Receptacle_USB2.0 P201
 U 1 1 5F9B9CC8
 P 9300 2750
 F 0 "P201" H 9407 3617 50  0000 C CNN
-F 1 "USB_C_Plug_USB2.0" H 9407 3526 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401548E4-2A" H 9450 2750 50  0001 C CNN
+F 1 "USB_C" H 9407 3526 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 9450 2750 50  0001 C CNN
 F 3 "~" H 9450 2750 50  0001 C CNN
 F 4 "" H 9300 2750 50  0001 C CNN "DNP"
-F 5 "918-1984" H 9300 2750 50  0001 C CNN "Partnumber"
-F 6 "RS-Components" H 9300 2750 50  0001 C CNN "Supplier"
+F 5 "2073-USB4085-GF-ACT-ND" H 9300 2750 50  0001 C CNN "Partnumber"
+F 6 "DigiKey" H 9300 2750 50  0001 C CNN "Supplier"
 	1    9300 2750
 	1    0    0    -1  
 $EndComp
@@ -2481,11 +2481,27 @@ Wire Wire Line
 	11950 6900 11950 7000
 Connection ~ 11950 7000
 Wire Wire Line
-	9900 2850 10950 2850
+	9900 2850 10000 2850
 Wire Wire Line
-	9900 2650 10950 2650
+	9900 2650 10000 2650
 Wire Wire Line
 	9900 2450 11450 2450
 Wire Wire Line
 	9900 2350 11550 2350
+Wire Wire Line
+	9900 2750 10000 2750
+Wire Wire Line
+	10000 2750 10000 2650
+Connection ~ 10000 2650
+Wire Wire Line
+	10000 2650 10950 2650
+Wire Wire Line
+	9900 2950 10000 2950
+Wire Wire Line
+	10000 2950 10000 2850
+Connection ~ 10000 2850
+Wire Wire Line
+	10000 2850 10950 2850
+NoConn ~ 9900 3250
+NoConn ~ 9900 3350
 $EndSCHEMATC
