@@ -224,7 +224,7 @@ F 1 "1k" V 3945 2750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4050 2750 50  0001 C CNN
 F 3 "~" H 4050 2750 50  0001 C CNN
 F 4 "" H 4050 2750 50  0001 C CNN "DNP"
-F 5 "213-2266" H 4050 2750 50  0001 C CNN "Partnumber"
+F 5 "" H 4050 2750 50  0001 C CNN "Partnumber"
 F 6 "RS-Components" H 4050 2750 50  0001 C CNN "Supplier"
 	1    4050 2750
 	0    1    1    0   
@@ -240,7 +240,7 @@ F 1 "1k" V 3945 3450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4050 3450 50  0001 C CNN
 F 3 "~" H 4050 3450 50  0001 C CNN
 F 4 "" H 4050 3450 50  0001 C CNN "DNP"
-F 5 "213-2266" H 4050 3450 50  0001 C CNN "Partnumber"
+F 5 "" H 4050 3450 50  0001 C CNN "Partnumber"
 F 6 "RS-Components" H 4050 3450 50  0001 C CNN "Supplier"
 	1    4050 3450
 	0    1    1    0   
@@ -320,7 +320,7 @@ F 1 "470R" V 3850 2250 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3900 2150 50  0001 C CNN
 F 3 "~" H 3900 2150 50  0001 C CNN
 F 4 "" H 3900 2150 50  0001 C CNN "DNP"
-F 5 "xxxx" H 3900 2150 50  0001 C CNN "Partnumber"
+F 5 "" H 3900 2150 50  0001 C CNN "Partnumber"
 F 6 "RS-Components" H 3900 2150 50  0001 C CNN "Supplier"
 	1    3900 2150
 	0    1    1    0   
@@ -334,7 +334,7 @@ F 1 "470R" V 3850 2150 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3900 2050 50  0001 C CNN
 F 3 "~" H 3900 2050 50  0001 C CNN
 F 4 "" H 3900 2050 50  0001 C CNN "DNP"
-F 5 "xxxx" H 3900 2050 50  0001 C CNN "Partnumber"
+F 5 "" H 3900 2050 50  0001 C CNN "Partnumber"
 F 6 "RS-Components" H 3900 2050 50  0001 C CNN "Supplier"
 	1    3900 2050
 	0    1    1    0   
@@ -352,7 +352,7 @@ F 1 "220R" H 4441 3845 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4500 3800 50  0001 C CNN
 F 3 "~" H 4500 3800 50  0001 C CNN
 F 4 "" H 4500 3800 50  0001 C CNN "DNP"
-F 5 "566-793" H 4500 3800 50  0001 C CNN "Partnumber"
+F 5 "" H 4500 3800 50  0001 C CNN "Partnumber"
 F 6 "RS-Components" H 4500 3800 50  0001 C CNN "Supplier"
 	1    4500 3800
 	-1   0    0    1   
@@ -500,7 +500,7 @@ F 1 "220R" H 4441 2445 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4500 2400 50  0001 C CNN
 F 3 "~" H 4500 2400 50  0001 C CNN
 F 4 "" H 4500 2400 50  0001 C CNN "DNP"
-F 5 "566-793" H 4500 2400 50  0001 C CNN "Partnumber"
+F 5 "" H 4500 2400 50  0001 C CNN "Partnumber"
 F 6 "RS-Components" H 4500 2400 50  0001 C CNN "Supplier"
 	1    4500 2400
 	-1   0    0    1   
@@ -576,7 +576,7 @@ F 1 "10k" H 6541 4045 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6600 4000 50  0001 C CNN
 F 3 "~" H 6600 4000 50  0001 C CNN
 F 4 "" H 6600 4000 50  0001 C CNN "DNP"
-F 5 "xxxxx" H 6600 4000 50  0001 C CNN "Partnumber"
+F 5 "" H 6600 4000 50  0001 C CNN "Partnumber"
 F 6 "RS-Components" H 6600 4000 50  0001 C CNN "Supplier"
 	1    6600 4000
 	-1   0    0    1   
