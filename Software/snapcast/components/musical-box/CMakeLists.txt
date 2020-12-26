@@ -4,11 +4,11 @@ set(COMPONENT_PRIV_REQUIRES audio_sal audio_hal esp_dispatcher esp_peripherals d
 
 if(CONFIG_AUDIO_BOARD_CUSTOM)
 message(STATUS "Current board name is " CONFIG_AUDIO_BOARD_CUSTOM)
-list(APPEND COMPONENT_ADD_INCLUDEDIRS ./musical_box_v1_0 ./pcm514x_driver)
+list(APPEND COMPONENT_ADD_INCLUDEDIRS ./musical_box_v1_0 ./TAS5754M_driver)
 set(COMPONENT_SRCS
 ./musical_box_v1_0/board.c
 ./musical_box_v1_0/board_pins_config.c
-./pcm514x_driver/pcm514x_codec.c
+./TAS5754M_driver/tas5754m_codec.c
 )
 endif()
 

@@ -35,7 +35,7 @@
 #define BATTERY_DETECT_GPIO       GPIO_NUM_37
 
 #define SDCARD_OPEN_FILE_NUM_MAX  5
-#define SDCARD_INTR_GPIO          GPIO_NUM_34
+#define SDCARD_INTR_GPIO          -1
 
 
 extern audio_hal_func_t AUDIO_CODEC_PCM514X_DEFAULT_HANDLE;
