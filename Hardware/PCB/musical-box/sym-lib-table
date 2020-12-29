@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name SilentWorks)(type Legacy)(uri ${KIPRJMOD}/../_library/SilentWorks.lib)(options "")(descr ""))
+  (lib (name musical-box-rescue)(type Legacy)(uri ${KIPRJMOD}/musical-box-rescue.lib)(options "")(descr ""))
 )

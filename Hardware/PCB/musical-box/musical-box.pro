@@ -1,4 +1,4 @@
-update=Date
+update=29.12.2020 17:01:25
 version=1
 last_client=kicad
 [general]
@@ -249,8 +249,8 @@ dPairViaGap=0.25
 Name=1A
 Clearance=0.2
 TrackWidth=0.2
-ViaDiameter=0.46
-ViaDrill=0.2
+ViaDiameter=0.56
+ViaDrill=0.3
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
@@ -260,8 +260,8 @@ dPairViaGap=0.25
 Name=3A
 Clearance=0.2
 TrackWidth=0.8
-ViaDiameter=0.46
-ViaDrill=0.2
+ViaDiameter=0.56
+ViaDrill=0.3
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2

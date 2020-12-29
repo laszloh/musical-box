@@ -155,10 +155,10 @@ F 6 "RS-Components" H 10350 7100 50  0001 C CNN "Supplier"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0101
 U 1 1 5FA47844
 P 10350 7000
-F 0 "#PWR?" H 10350 6850 50  0001 C CNN
+F 0 "#PWR0101" H 10350 6850 50  0001 C CNN
 F 1 "+3.3V" H 10365 7173 50  0000 C CNN
 F 2 "" H 10350 7000 50  0001 C CNN
 F 3 "" H 10350 7000 50  0001 C CNN
@@ -290,10 +290,10 @@ F 6 "RS-Components" H 10000 7100 50  0001 C CNN "Supplier"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0102
 U 1 1 5F5F02B6
 P 10000 7000
-F 0 "#PWR?" H 10000 6850 50  0001 C CNN
+F 0 "#PWR0102" H 10000 6850 50  0001 C CNN
 F 1 "+3.3V" H 10015 7173 50  0000 C CNN
 F 2 "" H 10000 7000 50  0001 C CNN
 F 3 "" H 10000 7000 50  0001 C CNN
@@ -343,25 +343,14 @@ F 3 "~" H 1400 9900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H103
-U 1 1 5FCE30B6
+L Mechanical:MountingHole H104
+U 1 1 5FCE332D
 P 1400 10100
-F 0 "H103" H 1500 10146 50  0000 L CNN
+F 0 "H104" H 1500 10146 50  0000 L CNN
 F 1 "MountingHole" H 1500 10055 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 1400 10100 50  0001 C CNN
 F 3 "~" H 1400 10100 50  0001 C CNN
 	1    1400 10100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H104
-U 1 1 5FCE332D
-P 1400 10300
-F 0 "H104" H 1500 10346 50  0000 L CNN
-F 1 "MountingHole" H 1500 10255 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 1400 10300 50  0001 C CNN
-F 3 "~" H 1400 10300 50  0001 C CNN
-	1    1400 10300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -441,10 +430,10 @@ F 6 "RS-Components" H 8650 2600 50  0001 C CNN "Supplier"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0103
 U 1 1 5FFF3552
 P 8550 2400
-F 0 "#PWR?" H 8550 2250 50  0001 C CNN
+F 0 "#PWR0103" H 8550 2250 50  0001 C CNN
 F 1 "+3.3V" H 8565 2573 50  0000 C CNN
 F 2 "" H 8550 2400 50  0001 C CNN
 F 3 "" H 8550 2400 50  0001 C CNN
