@@ -29,12 +29,12 @@ $EndComp
 $Comp
 L power:GND #PWR0170
 U 1 1 5FB089B3
-P 4300 3750
-F 0 "#PWR0170" H 4300 3500 50  0001 C CNN
-F 1 "GND" H 4305 3577 50  0000 C CNN
-F 2 "" H 4300 3750 50  0001 C CNN
-F 3 "" H 4300 3750 50  0001 C CNN
-	1    4300 3750
+P 4300 4050
+F 0 "#PWR0170" H 4300 3800 50  0001 C CNN
+F 1 "GND" H 4305 3877 50  0000 C CNN
+F 2 "" H 4300 4050 50  0001 C CNN
+F 3 "" H 4300 4050 50  0001 C CNN
+	1    4300 4050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -90,7 +90,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 2500 4350 2550
 $Comp
-L Connector_Generic:Conn_01x08 J401
+L Connector_Generic_MountingPin:Conn_01x08_MountingPin J401
 U 1 1 5FB124F3
 P 1750 1600
 F 0 "J401" H 1850 1600 50  0000 L CNN
@@ -212,7 +212,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 1900 1950 1900
 $Comp
-L Connector_Generic:Conn_01x04 J405
+L Connector_Generic_MountingPin:Conn_01x04_MountingPin J405
 U 1 1 5FB973B0
 P 1850 4800
 F 0 "J405" H 1950 4850 50  0000 L CNN
@@ -312,7 +312,7 @@ WS2812
 Text Label 2750 1700 2    50   ~ 0
 SCK
 $Comp
-L Connector_Generic:Conn_01x04 J402
+L Connector_Generic_MountingPin:Conn_01x04_MountingPin J402
 U 1 1 5FA92CEB
 P 3900 2950
 F 0 "J402" H 4000 2950 50  0000 L CNN
@@ -338,7 +338,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 3150 4300 3150
 Wire Wire Line
-	4300 3150 4300 3650
+	4300 3150 4300 3950
 $Comp
 L power:GND #PWR0180
 U 1 1 5F5302C7
@@ -351,7 +351,7 @@ F 3 "" H 2100 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J403
+L Connector_Generic_MountingPin:Conn_01x04_MountingPin J403
 U 1 1 5F5302EB
 P 1800 3250
 F 0 "J403" H 1900 3250 50  0000 L CNN
@@ -556,39 +556,39 @@ F 3 "" H 7200 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J404
+L Connector_Generic_MountingPin:Conn_01x04_MountingPin J404
 U 1 1 5F5A8AE1
-P 3900 3450
-F 0 "J404" H 4000 3450 50  0000 L CNN
-F 1 "Rotary Encoder 2" H 4000 3350 50  0000 L CNN
-F 2 "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical" H 3900 3450 50  0001 C CNN
-F 3 "~" H 3900 3450 50  0001 C CNN
-F 4 "752-1769" H 3900 3450 50  0001 C CNN "Partnumber"
-F 5 "RS-Components" H 3900 3450 50  0001 C CNN "Supplier"
-	1    3900 3450
+P 3900 3750
+F 0 "J404" H 4000 3750 50  0000 L CNN
+F 1 "Rotary Encoder 2" H 4000 3650 50  0000 L CNN
+F 2 "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical" H 3900 3750 50  0001 C CNN
+F 3 "~" H 3900 3750 50  0001 C CNN
+F 4 "752-1769" H 3900 3750 50  0001 C CNN "Partnumber"
+F 5 "RS-Components" H 3900 3750 50  0001 C CNN "Supplier"
+	1    3900 3750
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 3650 4300 3650
-Connection ~ 4300 3650
+	4100 3950 4300 3950
+Connection ~ 4300 3950
 Wire Wire Line
-	4300 3650 4300 3750
+	4300 3950 4300 4050
 Wire Wire Line
-	4100 3350 4500 3350
+	4100 3650 4500 3650
 Wire Wire Line
-	4500 3350 4500 3150
+	4500 3650 4500 3150
 Wire Wire Line
 	4500 3150 5050 3150
 Wire Wire Line
-	4100 3450 4600 3450
+	4100 3750 4600 3750
 Wire Wire Line
-	4600 3450 4600 3250
+	4600 3750 4600 3250
 Wire Wire Line
 	4600 3250 5150 3250
 Wire Wire Line
-	4100 3550 4700 3550
+	4100 3850 4700 3850
 Wire Wire Line
-	4700 3550 4700 3350
+	4700 3850 4700 3350
 Wire Wire Line
 	4700 3350 5250 3350
 $Comp
@@ -711,4 +711,59 @@ Wire Wire Line
 Wire Wire Line
 	5800 2850 5900 2850
 Connection ~ 4450 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5FF5C96A
+P 3900 4150
+F 0 "#PWR?" H 3900 3900 50  0001 C CNN
+F 1 "GND" H 3905 3977 50  0000 C CNN
+F 2 "" H 3900 4150 50  0001 C CNN
+F 3 "" H 3900 4150 50  0001 C CNN
+	1    3900 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF5CFA6
+P 3900 3350
+F 0 "#PWR?" H 3900 3100 50  0001 C CNN
+F 1 "GND" H 3905 3177 50  0000 C CNN
+F 2 "" H 3900 3350 50  0001 C CNN
+F 3 "" H 3900 3350 50  0001 C CNN
+	1    3900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF5D5F3
+P 1800 3650
+F 0 "#PWR?" H 1800 3400 50  0001 C CNN
+F 1 "GND" H 1805 3477 50  0000 C CNN
+F 2 "" H 1800 3650 50  0001 C CNN
+F 3 "" H 1800 3650 50  0001 C CNN
+	1    1800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF5E104
+P 1850 5200
+F 0 "#PWR?" H 1850 4950 50  0001 C CNN
+F 1 "GND" H 1855 5027 50  0000 C CNN
+F 2 "" H 1850 5200 50  0001 C CNN
+F 3 "" H 1850 5200 50  0001 C CNN
+	1    1850 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF5E8C8
+P 1750 2200
+F 0 "#PWR?" H 1750 1950 50  0001 C CNN
+F 1 "GND" H 1755 2027 50  0000 C CNN
+F 2 "" H 1750 2200 50  0001 C CNN
+F 3 "" H 1750 2200 50  0001 C CNN
+	1    1750 2200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
