@@ -13,15 +13,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5650 7200 0    50   Input ~ 0
+Text HLabel 5650 7200 0    50   BiDi ~ 0
 LRCLK
-Text HLabel 5650 4700 0    50   Input ~ 0
+Text HLabel 5650 4700 0    50   BiDi ~ 0
 SCLK
 Text HLabel 5650 4800 0    50   Input ~ 0
 SDIN
-Text HLabel 5650 4300 0    50   Input ~ 0
+Text HLabel 5650 4200 0    50   Input ~ 0
 SCL
-Text HLabel 5650 4200 0    50   BiDi ~ 0
+Text HLabel 5650 4100 0    50   BiDi ~ 0
 SDA
 Text HLabel 5650 8550 0    50   Output ~ 0
 ~SPK_FAULT
@@ -389,27 +389,26 @@ Wire Wire Line
 	6450 5000 6450 4700
 Wire Wire Line
 	6450 4700 5650 4700
-NoConn ~ 6550 5000
 Wire Wire Line
-	6700 5000 6700 4600
+	6700 5000 6700 4500
 Wire Wire Line
-	6700 4600 5650 4600
+	6700 4500 5650 4500
 Wire Wire Line
-	7000 5000 7000 4500
+	7000 5000 7000 4400
 Wire Wire Line
-	7000 4500 5650 4500
+	7000 4400 5650 4400
 Wire Wire Line
-	7100 5000 7100 4400
+	7100 5000 7100 4300
 Wire Wire Line
-	7100 4400 5650 4400
+	7100 4300 5650 4300
 Wire Wire Line
-	7250 5000 7250 4300
+	7250 5000 7250 4200
 Wire Wire Line
-	7250 4300 5650 4300
+	7250 4200 5650 4200
 Wire Wire Line
-	7350 5000 7350 4200
+	7350 5000 7350 4100
 Wire Wire Line
-	7350 4200 5650 4200
+	7350 4100 5650 4100
 Wire Wire Line
 	6650 6950 6650 7300
 Wire Wire Line
@@ -1342,11 +1341,11 @@ Wire Wire Line
 Connection ~ 8200 3100
 Wire Wire Line
 	8200 3100 8150 3100
-Text HLabel 5650 4400 0    50   BiDi ~ 0
+Text HLabel 5650 4300 0    50   BiDi ~ 0
 GPIO0
-Text HLabel 5650 4500 0    50   BiDi ~ 0
+Text HLabel 5650 4400 0    50   BiDi ~ 0
 GPIO1
-Text HLabel 5650 4600 0    50   BiDi ~ 0
+Text HLabel 5650 4500 0    50   BiDi ~ 0
 GPIO2
 $Comp
 L Connector:AudioJack4 J503
@@ -1654,47 +1653,9 @@ $EndComp
 Wire Wire Line
 	12000 4700 12000 4900
 Wire Wire Line
-	10200 4900 10400 4900
-Wire Wire Line
-	10200 4250 10400 4250
-Wire Wire Line
 	11550 7200 12000 7200
 Wire Wire Line
 	11550 7850 12000 7850
-Wire Wire Line
-	10200 7850 10400 7850
-Wire Wire Line
-	10200 7200 10400 7200
-Wire Wire Line
-	10400 4250 10400 4400
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 5FFC169D
-P 10400 4550
-F 0 "JP1" V 10354 4618 50  0000 L CNN
-F 1 "mono" V 10445 4618 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 10400 4550 50  0001 C CNN
-F 3 "~" H 10400 4550 50  0001 C CNN
-	1    10400 4550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10400 4700 10400 4900
-Wire Wire Line
-	10400 7200 10400 7350
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 5FFCCDD8
-P 10400 7500
-F 0 "JP2" V 10354 7568 50  0000 L CNN
-F 1 "mono" V 10445 7568 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 10400 7500 50  0001 C CNN
-F 3 "~" H 10400 7500 50  0001 C CNN
-	1    10400 7500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10400 7650 10400 7850
 Wire Wire Line
 	12000 7200 12000 7350
 $Comp
@@ -1712,18 +1673,6 @@ Wire Wire Line
 	12000 7650 12000 7850
 Connection ~ 12000 7200
 Connection ~ 12000 7850
-Connection ~ 10400 7850
-Wire Wire Line
-	10400 7850 10600 7850
-Connection ~ 10400 7200
-Wire Wire Line
-	10400 7200 10600 7200
-Connection ~ 10400 4900
-Wire Wire Line
-	10400 4900 10600 4900
-Connection ~ 10400 4250
-Wire Wire Line
-	10400 4250 10600 4250
 Text Label 12100 4250 0    50   ~ 0
 OUT1+
 Text Label 12100 4900 0    50   ~ 0
@@ -1830,4 +1779,18 @@ F 3 "" H 8500 9050 50  0001 C CNN
 	1    8500 9050
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	10200 7850 10600 7850
+Wire Wire Line
+	10200 7200 10600 7200
+Wire Wire Line
+	10200 4900 10600 4900
+Wire Wire Line
+	10200 4250 10600 4250
+Wire Wire Line
+	6550 5000 6550 4600
+Wire Wire Line
+	6550 4600 5650 4600
+Text HLabel 5650 4600 0    50   Input ~ 0
+MCLK
 $EndSCHEMATC
