@@ -474,10 +474,10 @@
       (net 26 "Net-(C201-Pad2)"))
     (pad 1 smd rect (at -1.016 -0.6477 270) (size 0.6477 0.4064) (layers F.Cu F.Paste F.Mask)
       (net 26 "Net-(C201-Pad2)"))
-    (model ${KIPRJMOD}/packages3d/DFN2523-6.wrl
-      (at (xyz 0 0 0))
+    (model ../_library/3d/U-DFN2523-6.STEP
+      (offset (xyz 1 1 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 90))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -1010,6 +1010,11 @@
       (net 1 GND))
     (pad S smd rect (at 0.6 3.45 180) (size 1.2 2.5) (layers F.Cu F.Paste F.Mask)
       (net 150 /Microcontroller/IO12))
+    (model D:/development/Projekte/Arduino/musical-box/Hardware/PCB/_library/3d/lumberg_1503_21.stp
+      (offset (xyz 15.5 0 3))
+      (scale (xyz 0.03937 0.03937 0.03937))
+      (rotate (xyz -90 0 90))
+    )
   )
 
   (module SilentWorks:PJ328B (layer F.Cu) (tedit 5FF683DB) (tstamp 5FF6E259)
@@ -1047,6 +1052,11 @@
       (net 1 GND))
     (pad S smd rect (at 0.6 3.45 180) (size 1.2 2.5) (layers F.Cu F.Paste F.Mask)
       (net 148 "/Audio Output/AUX_Detect"))
+    (model D:/development/Projekte/Arduino/musical-box/Hardware/PCB/_library/3d/lumberg_1503_21.stp
+      (offset (xyz 15.5 0 2.5))
+      (scale (xyz 0.03937 0.03937 0.03937))
+      (rotate (xyz -90 0 90))
+    )
   )
 
   (module LED_SMD:LED_0603_1608Metric_Castellated (layer F.Cu) (tedit 5B301BBE) (tstamp 5FDA6D60)
