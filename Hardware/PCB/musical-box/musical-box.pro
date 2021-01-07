@@ -259,7 +259,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=3A
 Clearance=0.2
-TrackWidth=0.8
+TrackWidth=0.7
 ViaDiameter=0.56
 ViaDrill=0.3
 uViaDiameter=0.3
