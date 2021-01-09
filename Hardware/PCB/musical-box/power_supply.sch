@@ -255,8 +255,6 @@ F 3 "" H 2100 7350 50  0001 C CNN
 	1    2100 7350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1700 7000 1650 7000
 $Comp
 L Device:C_Small C?
 U 1 1 5F4B5373
@@ -457,11 +455,6 @@ F 5 "DigiKey" H 5550 6900 50  0001 C CNN "Supplier"
 	1    5550 6900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1650 7000 1650 6800
-Connection ~ 1650 6800
-Wire Wire Line
-	1650 6800 1700 6800
 $Comp
 L power:GND #PWR?
 U 1 1 5F4B53D4
@@ -734,8 +727,6 @@ Wire Wire Line
 Wire Wire Line
 	1550 6800 1550 7050
 Connection ~ 1550 6800
-Wire Wire Line
-	1550 6800 1650 6800
 Wire Wire Line
 	1150 6800 1150 6750
 Connection ~ 1150 6800
@@ -2530,4 +2521,7 @@ F 3 "" H 8650 2600 50  0001 C CNN
 	1    8650 2600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1550 6800 1700 6800
+NoConn ~ 1700 7000
 $EndSCHEMATC
