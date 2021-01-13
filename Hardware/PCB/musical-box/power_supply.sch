@@ -848,18 +848,18 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5F94BECD
-P 6000 3400
+P 5850 3400
 AR Path="/5F1C79C7/5F43F238/5F94BECD" Ref="#PWR?"  Part="1" 
 AR Path="/5F1C79C7/5F94BECD" Ref="#PWR0126"  Part="1" 
-F 0 "#PWR0126" H 6000 3150 50  0001 C CNN
-F 1 "GND" H 6005 3227 50  0000 C CNN
-F 2 "" H 6000 3400 50  0001 C CNN
-F 3 "" H 6000 3400 50  0001 C CNN
-	1    6000 3400
+F 0 "#PWR0126" H 5850 3150 50  0001 C CNN
+F 1 "GND" H 5855 3227 50  0000 C CNN
+F 2 "" H 5850 3400 50  0001 C CNN
+F 3 "" H 5850 3400 50  0001 C CNN
+	1    5850 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 3100 6000 3400
+	5850 3300 5850 3400
 $Comp
 L Device:LED D?
 U 1 1 5F47A67A
@@ -1485,7 +1485,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 2250 5850 3200
 Wire Wire Line
-	5850 3200 5750 3200
+	5850 3200 5800 3200
 $Comp
 L Device:C_Small C?
 U 1 1 5F6E0AC9
@@ -2478,34 +2478,8 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf" H 11300 71
 	1    11300 7100
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector_Generic_MountingPin:Conn_01x02_MountingPin J203
-U 1 1 5F93BB3D
-P 5550 3100
-F 0 "J203" H 5472 3317 50  0000 C CNN
-F 1 "Li Ion 2S" H 5472 3226 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 5550 3100 50  0001 C CNN
-F 3 "~" H 5550 3100 50  0001 C CNN
-F 4 "688-1353" H 5550 3100 50  0001 C CNN "Partnumber"
-F 5 "RS-Components" H 5550 3100 50  0001 C CNN "Supplier"
-	1    5550 3100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6019E2C7
-P 5550 3400
-AR Path="/5F1C79C7/5F43F238/6019E2C7" Ref="#PWR?"  Part="1" 
-AR Path="/5F1C79C7/6019E2C7" Ref="#PWR0237"  Part="1" 
-F 0 "#PWR0237" H 5550 3150 50  0001 C CNN
-F 1 "GND" H 5555 3227 50  0000 C CNN
-F 2 "" H 5550 3400 50  0001 C CNN
-F 3 "" H 5550 3400 50  0001 C CNN
-	1    5550 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5750 3100 6000 3100
+	5800 3300 5850 3300
 $Comp
 L power:GND #PWR?
 U 1 1 60211273
@@ -2544,4 +2518,17 @@ Wire Wire Line
 	2150 6900 2300 6900
 Wire Wire Line
 	2500 6900 2700 6900
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 60016CD1
+P 5600 3200
+F 0 "J?" H 5680 3192 50  0000 L CNN
+F 1 "PSU" H 5680 3101 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5600 3200 50  0001 C CNN
+F 3 "~" H 5600 3200 50  0001 C CNN
+F 4 "146-8260" H 5600 3200 50  0001 C CNN "Partnumber"
+F 5 "RS-Components" H 5600 3200 50  0001 C CNN "Supplier"
+	1    5600 3200
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
