@@ -2423,19 +2423,6 @@ F 5 "RS-Components" H 14650 7000 50  0001 C CNN "Supplier"
 	0    1    -1   0   
 $EndComp
 $Comp
-L SilentWorks:DMP3017SFK Q201
-U 1 1 60192693
-P 8850 1700
-F 0 "Q201" V 9193 1700 50  0000 C CNN
-F 1 "DMP3013SFK" V 9102 1700 50  0000 C CNN
-F 2 "SilentWorks:DFN2523-6" H 9050 1625 50  0001 L CIN
-F 3 "https://docs.rs-online.com/d2cf/0900766b814b91c2.pdf" H 8850 1700 50  0001 L CNN
-F 4 "206-0116" H 8850 1700 50  0001 C CNN "Partnumber"
-F 5 "RS-Components" H 8850 1700 50  0001 C CNN "Supplier"
-	1    8850 1700
-	0    1    -1   0   
-$EndComp
-$Comp
 L Diode:SB160 D201
 U 1 1 5FEF8198
 P 2250 1600
@@ -2519,10 +2506,10 @@ Wire Wire Line
 Wire Wire Line
 	2500 6900 2700 6900
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J203
 U 1 1 60016CD1
 P 5600 3200
-F 0 "J?" H 5680 3192 50  0000 L CNN
+F 0 "J203" H 5680 3192 50  0000 L CNN
 F 1 "PSU" H 5680 3101 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5600 3200 50  0001 C CNN
 F 3 "~" H 5600 3200 50  0001 C CNN
@@ -2530,5 +2517,16 @@ F 4 "146-8260" H 5600 3200 50  0001 C CNN "Partnumber"
 F 5 "RS-Components" H 5600 3200 50  0001 C CNN "Supplier"
 	1    5600 3200
 	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMG2301L Q201
+U 1 1 60076D8B
+P 8850 1700
+F 0 "Q201" V 9192 1700 50  0000 C CNN
+F 1 "IRFHM9331" V 9101 1700 50  0000 C CNN
+F 2 "SilentWorks:PQFN-3x3" H 9050 1625 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMG2301L.pdf" H 8850 1700 50  0001 L CNN
+	1    8850 1700
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
