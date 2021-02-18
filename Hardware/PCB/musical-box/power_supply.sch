@@ -2527,6 +2527,6 @@ F 1 "IRFHM9331" V 9101 1700 50  0000 C CNN
 F 2 "SilentWorks:PQFN-3x3" H 9050 1625 50  0001 L CIN
 F 3 "https://www.diodes.com/assets/Datasheets/DMG2301L.pdf" H 8850 1700 50  0001 L CNN
 	1    8850 1700
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $EndSCHEMATC
