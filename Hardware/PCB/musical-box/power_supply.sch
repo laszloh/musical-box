@@ -2529,4 +2529,11 @@ F 3 "https://www.diodes.com/assets/Datasheets/DMG2301L.pdf" H 8850 1700 50  0001
 	1    8850 1700
 	0    1    -1   0   
 $EndComp
+Wire Wire Line
+	14200 6900 14200 6500
+Wire Wire Line
+	14200 6500 12700 6500
+Wire Wire Line
+	12700 6500 12700 7100
+Connection ~ 12700 7100
 $EndSCHEMATC
