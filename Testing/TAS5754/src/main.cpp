@@ -1,19 +1,24 @@
 #include <Arduino.h>
-#include <WiFi.h>
-#include <SPIFFS.h>
 #include <SD.h>
+#include <SPIFFS.h>
+#include <WiFi.h>
 #include <Wire.h>
 
-#include "AudioFileSourcePROGMEM.h"
-#include "AudioGeneratorWAV.h"
-#include "AudioOutputI2SNoDAC.h"
+#include "AudioFileSourceID3.h"
+#include "AudioFileSourceSPIFFS.h"
+#include "AudioGeneratorMP3.h"
+#include "AudioOutputI2S.h"
 
-// VIOLA sample taken from https://ccrma.stanford.edu/~jos/pasp/Sound_Examples.html
-#include "viola.h"
+// To run, set your ESP8266 build to 160MHz, and include a SPIFFS of 512KB or greater.
+// Use the "Tools->ESP8266/ESP32 Sketch Data Upload" menu to write the MP3 to SPIFFS
+// Then upload the sketch normally.
 
-AudioGeneratorWAV *wav;
-AudioFileSourcePROGMEM *file;
-AudioOutputI2SNoDAC *out;
+// pno_cs from https://ccrma.stanford.edu/~jos/pasp/Sound_Examples.html
+
+AudioGeneratorMP3 *mp3;
+AudioFileSourceSPIFFS *file;
+AudioOutputI2S *out;
+AudioFileSourceID3 *id3;
 
 struct tas57xx_cmd_s {
     uint8_t reg;
@@ -24,14 +29,33 @@ static constexpr const struct tas57xx_cmd_s tas57xx_init_sequence[] = {
     {0x00, 0x00}, // select page 0
     {0x02, 0x10}, // standby
     {0x0d, 0x10}, // use SCK for PLL
-    {0x25, 0x7D}, // ignore SCK halt
-    {0x08, 0x10}, // Mute control enable (from TAS5780)
-    {0x54, 0x02}, // Mute output control (from TAS5780)
+    {0x25, 0x18}, // ignore SCK halt
+    {0x28, 0x00}, //
+    // {0x09, 0x20}, //
     {0x02, 0x00}, // restart
-    {0x56, 0x00}, //
-    {0x2A, 0x21}, //
     {0xff, 0xff}  // end of table
 };
+
+// Called when a metadata event occurs (i.e. an ID3 tag, an ICY block, etc.
+void MDCallback(void *cbData, const char *type, bool isUnicode, const char *string) {
+    (void)cbData;
+    Serial.printf("ID3 callback for: %s = '", type);
+
+    if(isUnicode) {
+        string += 2;
+    }
+
+    while(*string) {
+        char a = *(string++);
+        if(isUnicode) {
+            string++;
+        }
+        Serial.printf("%c", a);
+    }
+    Serial.printf("'\n");
+    Serial.flush();
+}
+
 
 bool tas5754_setup() {
     constexpr uint8_t addr = 0x4c;
@@ -41,14 +65,13 @@ bool tas5754_setup() {
         Wire.beginTransmission(addr);
         Wire.write(tas57xx_init_sequence[i].reg);
         Wire.write(tas57xx_init_sequence[i].value);
-        error = Wire.endTransmission(false);
+        error = Wire.endTransmission();
         log_d("i2c write reg %u to 0x%02x", tas57xx_init_sequence[i].reg, tas57xx_init_sequence[i].value);
         if(error) {
             log_e("could not intialize TAS57xx: %s (%d)", Wire.getErrorText(error), error);
             return false;
         }
     }
-    Wire.endTransmission(true);
 
     pinMode(19, OUTPUT);
     digitalWrite(19, HIGH);
@@ -56,21 +79,27 @@ bool tas5754_setup() {
 }
 
 void setup() {
+    const char *soundfont = "/1mgm.sf2";
+    const char *midifile = "/furelise.mid";
+
     Serial.begin(115200);
     log_i("Starting up I2S testbench");
 
-    WiFi.mode(WIFI_OFF);
     Wire.begin(18, 5);
+    SPIFFS.begin();
 
     // setup TAS5754
     tas5754_setup();
 
     audioLogger = &Serial;
-    file = new AudioFileSourcePROGMEM(viola, sizeof(viola));
-    out = new AudioOutputI2SNoDAC();
+    file = new AudioFileSourceSPIFFS("/pno-cs.mp3");
+    id3 = new AudioFileSourceID3(file);
+    id3->RegisterMetadataCB(MDCallback, (void *)"ID3TAG");
+    out = new AudioOutputI2S();
     out->SetPinout(4, 15, 2);
-    wav = new AudioGeneratorWAV();
-    wav->begin(file, out);
+    out->SetGain(0.125);
+    mp3 = new AudioGeneratorMP3();
+    mp3->begin(id3, out);
 }
 
 inline uint8_t readReg(uint8_t reg) {
@@ -88,19 +117,21 @@ inline uint8_t readReg(uint8_t reg) {
 
 void loop() {
     static uint32_t last = millis();
-    if(wav->isRunning()) {
-        if(!wav->loop())
-            wav->stop();
+
+    if(mp3->isRunning()) {
+        if(!mp3->loop())
+            mp3->stop();
     } else {
-        log_d("WAV done");
+        Serial.printf("MP3 done\n");
         delay(1000);
     }
-    uint32_t cur = millis();
-    if((cur - last) > 5000) {
-        last = cur;
-        log_d("\nReg 0x04: 0x%02x", readReg(0x04));
-        for(auto i = 0x5E; i < 0x7A; i++) {
-            log_d("Reg 0x%02x: 0x%02x", i, readReg(i));
-        }
-    }
+    // uint32_t cur = millis();
+    // if((cur - last) > 1000) {
+    //     last = cur;
+    //     log_d("");
+    //     log_d("Reg 0x04: 0x%02x", readReg(0x04));
+    //     for(auto i = 0x5E; i < 0x60; i++) {
+    //         log_d("Reg 0x%02x: 0x%02x", i, readReg(i));
+    //     }
+    // }
 }
