@@ -1119,20 +1119,18 @@ Wire Wire Line
 Connection ~ 10100 7350
 Wire Wire Line
 	10100 7350 10200 7350
-Wire Wire Line
-	9550 7600 9700 7600
 $Comp
 L Device:C_Small C520
 U 1 1 60187FE1
-P 9450 7600
-F 0 "C520" V 9500 7550 50  0000 R CNN
-F 1 "220n" V 9500 7650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9450 7600 50  0001 C CNN
-F 3 "~" H 9450 7600 50  0001 C CNN
-F 4 "" H 9450 7600 50  0001 C CNN "DNP"
-F 5 "170-0129" H 9450 7600 50  0001 C CNN "Partnumber"
-F 6 "RS-Components" H 9450 7600 50  0001 C CNN "Supplier"
-	1    9450 7600
+P 9400 7850
+F 0 "C520" V 9450 7800 50  0000 R CNN
+F 1 "220n" V 9450 7900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9400 7850 50  0001 C CNN
+F 3 "~" H 9400 7850 50  0001 C CNN
+F 4 "" H 9400 7850 50  0001 C CNN "DNP"
+F 5 "170-0129" H 9400 7850 50  0001 C CNN "Partnumber"
+F 6 "RS-Components" H 9400 7850 50  0001 C CNN "Supplier"
+	1    9400 7850
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
@@ -1143,19 +1141,6 @@ Wire Wire Line
 	9500 7350 9500 6950
 Wire Wire Line
 	9500 7350 10100 7350
-Wire Wire Line
-	9100 6950 9100 7700
-Wire Wire Line
-	9700 7600 9700 7700
-Wire Wire Line
-	9350 7600 9200 7600
-Wire Wire Line
-	9200 7600 9200 6950
-Connection ~ 9700 7700
-Wire Wire Line
-	9700 7700 10200 7700
-Wire Wire Line
-	9100 7700 9700 7700
 $Comp
 L Device:C_Small C511
 U 1 1 6037D186
@@ -1605,17 +1590,15 @@ Text Label 12100 4250 0    50   ~ 0
 OUT1+
 Text Label 12100 4900 0    50   ~ 0
 OUT1-
-Text Label 12100 7200 0    50   ~ 0
+Text Label 12300 7850 0    50   ~ 0
 OUT2+
-Text Label 12100 7850 0    50   ~ 0
+Text Label 12300 7200 0    50   ~ 0
 OUT2-
 Text Label 9700 4400 0    50   ~ 0
 SPKA_OUT+
 Text Label 9700 4750 0    50   ~ 0
 SPKA_OUT-
 Text Label 10200 7200 0    50   ~ 0
-SPKB_OUT+
-Text Label 9800 7700 0    50   ~ 0
 SPKB_OUT-
 $Comp
 L power:+3.3VA #PWR0230
@@ -1977,4 +1960,21 @@ Wire Notes Line
 	13550 8600 11800 8600
 Text Notes 11850 8750 0    50   ~ 0
 TAS5754M PBTL mode
+Wire Wire Line
+	9200 6950 9200 7700
+Wire Wire Line
+	9500 7850 9650 7850
+Wire Wire Line
+	9100 7850 9100 6950
+Wire Wire Line
+	9100 7850 9300 7850
+Connection ~ 9650 7700
+Wire Wire Line
+	9650 7700 10200 7700
+Wire Wire Line
+	9650 7850 9650 7700
+Wire Wire Line
+	9200 7700 9650 7700
+Text Label 9250 7700 0    50   ~ 0
+SPKB_OUT+
 $EndSCHEMATC
