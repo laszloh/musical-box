@@ -229,20 +229,6 @@ Wire Wire Line
 	4700 2300 5000 2300
 Wire Wire Line
 	5000 2400 4700 2400
-$Comp
-L Device:R_Small R309
-U 1 1 5F9B9CB3
-P 5100 2600
-F 0 "R309" V 5150 2700 50  0000 L CNN
-F 1 "220R" V 5150 2300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5100 2600 50  0001 C CNN
-F 3 "~" H 5100 2600 50  0001 C CNN
-F 4 "" H 5100 2600 50  0001 C CNN "DNP"
-F 5 "" H 5100 2600 50  0001 C CNN "Partnumber"
-F 6 "RS-Components" H 5100 2600 50  0001 C CNN "Supplier"
-	1    5100 2600
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8050 2750 7600 2750
 Text Label 7600 2750 0    50   ~ 0
@@ -277,20 +263,6 @@ Text HLabel 7600 3350 0    50   BiDi ~ 0
 IO14
 Text HLabel 7600 3450 0    50   BiDi ~ 0
 IO15
-$Comp
-L Device:R_Small R304
-U 1 1 5F51F39C
-P 5100 2500
-F 0 "R304" V 5050 2400 50  0000 R CNN
-F 1 "220R" V 5050 2600 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5100 2500 50  0001 C CNN
-F 3 "~" H 5100 2500 50  0001 C CNN
-F 4 "" H 5100 2500 50  0001 C CNN "DNP"
-F 5 "" H 5100 2500 50  0001 C CNN "Partnumber"
-F 6 "RS-Components" H 5100 2500 50  0001 C CNN "Supplier"
-	1    5100 2500
-	0    1    1    0   
-$EndComp
 $Comp
 L Switch:SW_Push SW301
 U 1 1 5F58D12D
@@ -445,14 +417,14 @@ Wire Wire Line
 	5000 2500 4700 2500
 Wire Wire Line
 	5000 2600 4700 2600
-Text Label 5800 2300 2    50   ~ 0
-TXD0
 Text Label 5800 2400 2    50   ~ 0
+TXD0
+Text Label 5800 2300 2    50   ~ 0
 RXD0
 Wire Wire Line
-	5200 2400 5800 2400
-Wire Wire Line
 	5200 2300 5800 2300
+Wire Wire Line
+	5200 2400 5800 2400
 $Comp
 L power:+3.3V #PWR0145
 U 1 1 6038BDAE
@@ -493,5 +465,33 @@ F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 4500 2400 50  
 F 3 "~" H 4500 2400 50  0001 C CNN
 	1    4500 2400
 	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R304
+U 1 1 5F51F39C
+P 5100 2500
+F 0 "R304" V 5050 2800 50  0000 R CNN
+F 1 "220R" V 5050 2200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5100 2500 50  0001 C CNN
+F 3 "~" H 5100 2500 50  0001 C CNN
+F 4 "" H 5100 2500 50  0001 C CNN "DNP"
+F 5 "" H 5100 2500 50  0001 C CNN "Partnumber"
+F 6 "RS-Components" H 5100 2500 50  0001 C CNN "Supplier"
+	1    5100 2500
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R309
+U 1 1 5F9B9CB3
+P 5100 2600
+F 0 "R309" V 5150 2700 50  0000 L CNN
+F 1 "220R" V 5150 2300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5100 2600 50  0001 C CNN
+F 3 "~" H 5100 2600 50  0001 C CNN
+F 4 "" H 5100 2600 50  0001 C CNN "DNP"
+F 5 "" H 5100 2600 50  0001 C CNN "Partnumber"
+F 6 "RS-Components" H 5100 2600 50  0001 C CNN "Supplier"
+	1    5100 2600
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
