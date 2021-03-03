@@ -1823,7 +1823,7 @@ Text HLabel 5600 10300 0    50   Output ~ 0
 AUX_Detect
 Text Label 9150 10600 0    50   ~ 0
 DAC_OUTB
-Text Label 9150 10500 0    50   ~ 0
+Text Label 8100 7250 1    50   ~ 0
 SPK_INB+
 $Comp
 L power:+3.3V #PWR0102
@@ -1977,4 +1977,6 @@ Wire Wire Line
 	9200 7700 9650 7700
 Text Label 9250 7700 0    50   ~ 0
 SPKB_OUT+
+Text Label 9150 10500 0    50   ~ 0
+SPK_INB
 $EndSCHEMATC

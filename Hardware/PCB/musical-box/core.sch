@@ -429,9 +429,9 @@ Wire Wire Line
 Text Label 7600 2750 0    50   ~ 0
 IO00
 Wire Wire Line
-	8050 3150 7850 3150
+	8050 3150 7950 3150
 Wire Wire Line
-	8050 3250 7750 3250
+	8050 3250 7850 3250
 Text HLabel 7600 3150 0    50   BiDi ~ 0
 IO12
 Text HLabel 7600 3250 0    50   BiDi ~ 0
@@ -454,7 +454,7 @@ Text Label 4950 2250 2    50   ~ 0
 Wire Wire Line
 	7600 2850 8050 2850
 Wire Wire Line
-	8050 3350 7950 3350
+	8050 3350 7750 3350
 Wire Wire Line
 	8050 3450 7650 3450
 Text HLabel 7600 2850 0    50   BiDi ~ 0
@@ -690,18 +690,18 @@ tdi
 Text Label 7250 3950 0    50   ~ 0
 tms
 Wire Wire Line
-	7950 3350 7950 3950
-Connection ~ 7950 3350
+	7750 3350 7750 3950
+Connection ~ 7750 3350
 Wire Wire Line
-	7950 3350 7600 3350
-Connection ~ 7750 3250
+	7750 3350 7600 3350
+Connection ~ 7850 3250
 Wire Wire Line
-	7750 3250 7600 3250
+	7850 3250 7600 3250
 Wire Wire Line
 	7150 3850 7650 3850
-Connection ~ 7850 3150
+Connection ~ 7950 3150
 Wire Wire Line
-	7850 3150 7600 3150
+	7950 3150 7600 3150
 $Comp
 L Transistor_BJT:BC848 Q301
 U 1 1 6043E4F8
@@ -725,13 +725,13 @@ F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_B
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	7750 3250 7750 4050
+	7850 3250 7850 4050
 Wire Wire Line
-	7150 4050 7750 4050
+	7150 4050 7850 4050
 Wire Wire Line
-	7150 3950 7950 3950
+	7150 3950 7750 3950
 Wire Wire Line
-	7150 4150 7850 4150
+	7150 4150 7950 4150
 Wire Wire Line
-	7850 3150 7850 4150
+	7950 3150 7950 4150
 $EndSCHEMATC
