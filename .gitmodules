@@ -1,6 +1,7 @@
 [submodule "Hardware/PCB/_library"]
 	path = Hardware/PCB/_library
 	url = https://github.com/laszloh/kicad_library.git
+	branch = KiCAD-6.x
 [submodule "Software/squeezelite-esp32"]
 	path = Software/squeezelite-esp32
 	url = https://github.com/laszloh/squeezelite-esp32.git
